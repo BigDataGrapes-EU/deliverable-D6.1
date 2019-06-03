@@ -215,5 +215,5 @@ List of Docker Images
 | PhpMyAdmin | [bigdatagrapes/phpmyadmin](https://cloud.docker.com/u/bigdatagrapes/repository/docker/bigdatagrapes/phpmyadmin) |
 | Mysql | [bigdatagrapes/mysql](https://cloud.docker.com/u/bigdatagrapes/repository/docker/bigdatagrapes/mysql) |
 | Tomcat | [bigdatagrapes/tomcat](https://cloud.docker.com/u/bigdatagrapes/repository/docker/bigdatagrapes/tomcat) |
-
+| Cassandra | [bigdatagrapes/cassandra](https://cloud.docker.com/u/bigdatagrapes/repository/docker/bigdatagrapes/cassandra) |
 
