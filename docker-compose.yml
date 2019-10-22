@@ -149,7 +149,7 @@ services:
       - 7200:7200
 
   flume:
-    image: bde2020/flume
+    image: bigdatagrapes/flume
     container_name: flume
     environment:
       - "192.168.1.77"      
