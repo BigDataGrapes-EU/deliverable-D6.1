@@ -159,3 +159,11 @@ services:
       - "127.0.0.1"      
     ports:
       - 8020:9000
+
+  predictive-data-analytics:
+    image: bigdatagrapes/predictive-data-analytics:v1
+    container_name: predictive-data-analytics
+    environment:
+      - "127.0.0.1"
+    ports:
+      - 5000:5010
