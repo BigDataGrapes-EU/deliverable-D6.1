@@ -82,7 +82,7 @@ List of Docker Images
 | Neo4j | [bigdatagrapes/neo4j](https://cloud.docker.com/u/bigdatagrapes/repository/docker/bigdatagrapes/neo4j) |
 | Hbase | [bigdatagrapes/hbase](https://cloud.docker.com/u/bigdatagrapes/repository/docker/bigdatagrapes/hbase) |
 | Kafka | [bigdatagrapes/kafka](https://cloud.docker.com/u/bigdatagrapes/repository/docker/bigdatagrapes/kafka) |
-| Flink | [bigdatagrapes/flinl](https://cloud.docker.com/u/bigdatagrapes/repository/docker/bigdatagrapes/flink) |
+| Flink | [bigdatagrapes/flink](https://cloud.docker.com/u/bigdatagrapes/repository/docker/bigdatagrapes/flink) |
 | Flume | [bigdatagrapes/flume](https://cloud.docker.com/u/bigdatagrapes/repository/docker/bigdatagrapes/flume) |
 | Kibana | [bigdatagrapes/kibana](https://cloud.docker.com/u/bigdatagrapes/repository/docker/bigdatagrapes/kibana) |
 | Elasticsearch | [bigdatagrapes/elasticsearch](https://cloud.docker.com/u/bigdatagrapes/repository/docker/bigdatagrapes/elasticsearch) |
@@ -97,3 +97,10 @@ List of Docker Images
 |Logstash| [bigdatagrapes/logstash](https://cloud.docker.com/u/bigdatagrapes/repository/docker/bigdatagrapes/logstash) |
 
 
+## Deployment
+
+To help with the deployment of the stack there are 2 scripts present:
+* _deploy.sh_, that deploys the whole stack, and
+* _destroy.sh_, that clears everything running as a docker container in the VM executed.
+
+Both these scripts should be executed as root.

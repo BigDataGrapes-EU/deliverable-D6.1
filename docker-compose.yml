@@ -4,7 +4,7 @@ services:
     image: bigdatagrapes/elasticsearch
     container_name: elasticsearch
     environment:
-      - "192.168.1.77"
+      - "127.0.0.1"
     ports:
       - 9200:9200
       - 9300:9300  
@@ -13,7 +13,7 @@ services:
     image: bigdatagrapes/hadoop
     container_name: hadoop
     environment:
-      - "192.168.1.77"
+      - "127.0.0.1"
     ports:
       - 5601:5601
 
@@ -21,21 +21,21 @@ services:
     image: bigdatagrapes/virtuoso
     container_name: virtuoso
     environment:
-      - "192.168.1.77"
+      - "127.0.0.1"
     ports:
       - 5001:5609
   neo4j:
     image: bigdatagrapes/neo4j
     container_name: neo4j
     environment:
-      - "192.168.1.77"
+      - "127.0.0.1"
     ports:
       - 3001:3609
   hbase:
     image: bigdatagrapes/hbase
     container_name: hbase
     environment:
-      - "192.16.1.77"
+      - "127.0.0.1"
     ports:
       - 16000:16000
       - 16010:16010
@@ -45,7 +45,7 @@ services:
     image: bigdatagrapes/flink
     container_name: flink
     environment:
-      - "192.168.1.77"
+      - "127.0.0.1"
     ports:
       - 6123:6123
       - 8089:8089
@@ -54,7 +54,7 @@ services:
     image: bigdatagrapes/spark-master
     container_name: spark-master
     environment:
-      - "192.168.1.77"
+      - "127.0.0.1"
     ports:
       - 8080:8080
       - 6066:6066
@@ -64,7 +64,7 @@ services:
     image: bigdatagrapes/spark-worker
     container_name: spark-worker
     environment:
-      - "192.168.1.77"
+      - "127.0.0.1"
     ports:
       - 8081:8081
 
@@ -72,7 +72,7 @@ services:
     image: bigdatagrapes/mongo
     container_name: mongo
     environment:
-      - "192.168.1.77"
+      - "127.0.0.1"
     ports:
       - 27017:27017
 
@@ -80,7 +80,7 @@ services:
     image: bigdatagrapes/sparklingwater
     container_name: sparklingwater
     environment:
-      - "192.168.1.77"
+      - "127.0.0.1"
     ports:
       - 27000:27017
       
@@ -88,7 +88,7 @@ services:
     image: bigdatagrapes/kafka
     container_name: kafka
     environment:
-      - "192.168.1.77"
+      - "127.0.0.1"
     ports:
       - 9092:9092      
       - 2181:2181      
@@ -97,7 +97,7 @@ services:
     image: bigdatagrapes/cassandra:v1
     container_name: cassandra
     environment:
-      - "192.168.1.77"
+      - "127.0.0.1"
     ports:
       - 7100:7199
     
@@ -106,7 +106,7 @@ services:
     image: bigdatagrapes/kibana
     container_name: kibana
     environment:
-      - "192.168.1.77"
+      - "127.0.0.1"
     ports:
       - 2122:3122
    
@@ -115,7 +115,7 @@ services:
     image: bigdatagrapes/phpmyadmin
     container_name: phpmyadmin
     environment:
-      - "192.168.1.77"
+      - "127.0.0.1"
     ports:
       - 9000:9000
       
@@ -123,16 +123,16 @@ services:
     image: bigdatagrapes/mysql
     container_name: mysql
     environment:
-      - "192.168.1.77"
+      - "127.0.0.1"
     ports:
-      - 3306:3306
+      - 3307:3310
       - 33060:33060
       
   tomcat:
     image: bigdatagrapes/tomcat
     container_name: tomcat
     environment:
-      - "192.168.1.77"
+      - "127.0.0.1"
     ports:
       - 8888:8888
       
@@ -140,7 +140,7 @@ services:
     image: bigdatagrapes/logstash
     container_name: logstash
     environment:
-      - "192.168.1.77"
+      - "127.0.0.1"
     ports:
       - 8700:9000
   
@@ -148,7 +148,7 @@ services:
     image: bigdatagrapes/graphdb
     container_name: graphdb
     environment:
-      - "192.168.1.77"      
+      - "127.0.0.1"      
     ports:
       - 7200:7200
 
@@ -156,5 +156,6 @@ services:
     image: bigdatagrapes/flume
     container_name: flume
     environment:
-      - "192.168.1.77"      
-    
+      - "127.0.0.1"      
+    ports:
+      - 8020:9000
